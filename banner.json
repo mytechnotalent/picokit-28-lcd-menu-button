@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-28-lcd-menu-button",
+  "eyebrow": "PICOKIT // LESSON 28",
+  "title": "PICOKIT // LCD MENU BUTTON",
+  "subtitle": "BUTTON MENU + AUTHENTICATED HEARTBEAT",
+  "accent": "#A424FF",
+  "dim": "#65169E",
+  "white": "#E7D7FF",
+  "cyan": "#7FD8E0",
+  "bg": "#0B0211",
+  "bg_edge": "#030005",
+  "icon": "lcd",
+  "panel_status": "MENU 2/3  ·  SET  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "INPUT",
+      "value": "GP15"
+    },
+    {
+      "label": "ITEM",
+      "value": "2 / 3"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-34 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00028  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] button press  item 2 set  lcd render",
+    "[+] ack sent  rssi -34  snr 9.0"
+  ],
+  "categories": [
+    "BUTTON",
+    "MENU",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "MN-01",
+      "label": "start",
+      "value": "1 / 3"
+    },
+    {
+      "tag": "MN-02",
+      "label": "set",
+      "value": "2 / 3"
+    },
+    {
+      "tag": "MN-03",
+      "label": "info",
+      "value": "3 / 3"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ MENU ]=="
+  ],
+  "layout": "terminal",
+  "stat": "GP15"
+}
